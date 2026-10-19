@@ -1,4 +1,8 @@
-function printUserInfo(name: string, age: number, email?: string): void {
+function printUserInfo(
+  name: string,
+  age: number,
+  email?: string,
+): void {
   if (email) {
     console.log(`${name}, ${age} years old, email: ${email}`);
   } else {

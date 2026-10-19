@@ -1,4 +1,7 @@
-type Status = "loading" | "success" | "error";
+type Status =
+  | "loading"
+  | "success"
+  | "error";
 
 function logStatus(status: Status): void {
   console.log(`Current status: ${status}`);

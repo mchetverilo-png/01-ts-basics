@@ -9,9 +9,11 @@ interface Post {
 function fetchPosts(): Promise<Post[]> {
   return axios
     .get<Post[]>("https://jsonplaceholder.typicode.com/posts")
-    .then((response) => {
-      console.log(response.data[0].title);
-      return response.data;
+    .then((postsResponse) => {
+      const posts: Post[] = postsResponse.data;
+      console.log(posts[0].title);
+
+      return posts;
     });
 }
 

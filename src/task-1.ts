@@ -1,5 +1,5 @@
-const username: string = "Nikita";
-const age: number = 20;
-const isStudent: boolean = true;
+const username: string = "Max";
+const age: number = 707;
+const inWork: boolean = false;
 
-console.log(username, age, isStudent);
+console.log(username, age, inWork);

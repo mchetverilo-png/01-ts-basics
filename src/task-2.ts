@@ -1,17 +1,17 @@
 interface Product {
-  readonly id: number;
   name: string;
   price: number;
   inStock: boolean;
   description?: string;
+  readonly id: number;
 }
 
 const product: Product = {
-  id: 1,
-  name: "Mechanical keyboard",
-  price: 2499,
-  inStock: true,
-  description: "Keyboard with brown switches",
+  name: "Wireless mouse",
+  price: 899,
+  inStock: false,
+  description: "Ergonomic mouse with adjustable DPI",
+  id: 2,
 };
 
 console.log(product);

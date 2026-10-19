@@ -1,11 +1,13 @@
 function getMessage(): Promise<string> {
   return new Promise<string>((resolve) => {
     setTimeout(() => {
-      resolve("Hello from promise!");
+      resolve("Hi there");
     }, 1000);
   });
 }
 
-getMessage().then((result) => {
-  console.log(result.toUpperCase());
-});
+getMessage().then(
+  (result: string) => {
+    console.log(result.toUpperCase());
+  },
+);

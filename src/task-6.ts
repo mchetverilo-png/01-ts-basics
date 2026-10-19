@@ -2,9 +2,13 @@ function getFirstElement<T>(arr: T[]): T {
   return arr[0];
 }
 
-const firstNumber = getFirstElement<number>([1, 2, 3]);
-const firstString = getFirstElement<string>(["a", "b", "c"]);
-const firstBoolean = getFirstElement<boolean>([true, false, true]);
+const firstNumber: number = getFirstElement<number>([10, 20, 30]);
+const firstString: string = getFirstElement<string>([
+  "typescript",
+  "generics",
+  "arrays",
+]);
+const firstBoolean: boolean = getFirstElement<boolean>([false, true, false]);
 
 console.log(firstNumber, firstString, firstBoolean);
 
